@@ -1,0 +1,53 @@
+package com.ce.fatom;
+
+import java.util.Map;
+
+import com.trapedza.bankfusion.servercommon.commands.BankFusionEnvironment;
+import com.trapedza.bankfusion.servercommon.core.UpdateAuditLoggerManager;
+import com.trapedza.bankfusion.servercommon.extensionpoints.ExtensionPoint;
+
+public class ValidateKFWDetails implements ExtensionPoint {
+
+	public ValidateKFWDetails() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void continueProcess() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@SuppressWarnings("rawtypes")
+	@Override
+	public Map getAttributes() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean isComplete() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void process(BankFusionEnvironment env) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void registerWithUpdateLoggerManager(UpdateAuditLoggerManager arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setAttributes(Map arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

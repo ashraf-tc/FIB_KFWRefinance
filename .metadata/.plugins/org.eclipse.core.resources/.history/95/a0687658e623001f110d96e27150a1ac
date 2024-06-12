@@ -1,0 +1,8 @@
+package com.trapedza.bankfusion.steps.refimpl;
+
+public class Snippet {
+	public static void main(String[] args) {
+		com.trapedza.bpm.codegeneration.providers.BatchStepProvider
+	}
+}
+

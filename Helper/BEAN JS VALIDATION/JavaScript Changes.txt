@@ -1,0 +1,122 @@
+
+Always Go with the SYMBOLIC:
+Clear the cache
+
+
+1. 	JS file location:
+	-----------------
+	D:\SOWBI\2022\INSTALL-LOCATION\BankFusion\SYMBOLIC\Deployables
+
+
+2. 	Open in 7Zip:
+	-------------
+	BankFusion.ear\uxp.war\rt\js\d\app\
+
+3.  Another JS Entry in the location
+	D:\SOWBI\2022\INSTALL-LOCATION\BankFusion\SYMBOLIC\StaticWebContent\rt\js\d\app\
+
+4. 	Entry for the new creation of JS in (userexit_config.json):
+	------------------------------------
+	D:\SOWBI\2022\INSTALL-LOCATION\BankFusion\SYMBOLIC\ServerConf\conf\userexit
+	
+	i) To Get Screen Name:
+	   ------------------
+	$("div[class='ux-form-title']").attr("screen_name");
+		
+	ii) Entry on UserExits (userexit_config.json)
+		------------------
+	"SCREEN_NAME":[{"userexitjs": "FILE_NAME","type": "load","moduleName": "app/","path": "FOLDER_NAME/"}]
+	
+	
+5. Server Restart!
+
+6. Json is responsible for the loading of js file
+
+7. If the js is not called then there is problem in path specified in js file
+
+
+JS Changes:
+-----------
+var textVal = api.getControlAttribute(formid,"NameOfTheFeild"+formid,'ValueForTheFeild','value');
+
+
+
+
+	
+Sample.js;
+----------
+
+define("app/Custextn/spot_deal_checkbox",["uxp/utility","uxp/api" ,"dijit/registry","uxp/dialog", "dojo/dom"], function(utility,api,registry,dialog,dom){
+	
+	var spot_deal_checkbox = {};
+	spot_deal_checkbox.process = function(formid) {
+		console.log("******userexit execution of Segment Default******");
+		// var textVal = api.getControlAttribute(formid,"CustomerCode"+formid,'value');
+		api.setControlAttribute(formid , "CustomerCode"+formid , 'true','value');
+		console.log("******JS Validation completed for Segment Default******");
+	};
+	
+	return spot_deal_checkbox;
+});
+
+
+UserExits.xml:
+--------------
+{
+	"userExitItems":{
+		"AC_INT_UpdateInterestDetails-Next":[{"userexitjs":"validatePayAwayAmendment", "type":"onClick", "moduleName":"app/", "path":"awash/"}],
+		"BT_TTB_CashDepInput": [
+			{
+				"userexitjs": "ce_teller_clone_screenLableChange",
+				"type": "load",
+				"moduleName": "app/",
+				"path": "awash/"
+			}
+		],
+		"PT_PAM_CreatePersonalParty": [
+			{
+				"userexitjs": "ceparty_segmentdeflt_and_taxdtls_controlvalues",
+				"type": "load",
+				"moduleName": "app/",
+				"path": "awash/"
+			}
+		],
+		"PT_PAM_AddEnterpriseDetails": [
+			{
+				"userexitjs": "ceparty_segmentdeflt_and_taxdtls_controlvalues",
+				"type": "load",
+				"moduleName": "app/",
+				"path": "awash/"
+			}
+		],
+		"AC_ORG_AccountOpenProductDetails": [
+			{
+				"userexitjs": "ce_acc_accountValidator",
+				"type": "load",
+				"moduleName": "app/",
+				"path": "awash/"
+			}
+		]
+	}
+}
+
+
+
+
+
+ubObj.ReturnFalse= function(payload) {
+        console.log("Payload Working!!!")
+        var runtimeMFID = payload.srcFormId;
+		
+		//Fetch Value
+        var getname = api.getControlAttribute(runtimeMFID, "Name" + runtimeMFID, 'value');
+		
+		//Set Value
+        api.setControlAttribute(runtimeMFID,"Name2"+runtimeMFID,getname,'value');
+		
+		//Disable field
+		api.disableEnableControl("", "Name"+formid, true);
+		
+        console.log("End Of JS!!!")
+    }
+        return ubObj;

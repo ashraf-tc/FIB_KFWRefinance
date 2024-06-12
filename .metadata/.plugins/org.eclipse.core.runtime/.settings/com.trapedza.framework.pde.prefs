@@ -1,0 +1,11 @@
+CODE_GEN_PKG_BO=com.trapedza.bankfusion.bo.refimpl
+CODE_GEN_PKG_EXPRESSION=com.trapedza.bankfusion.expressions.refimpl
+CODE_GEN_PKG_FEATURE=com.trapedza.bankfusion.filter
+CODE_GEN_PKG_FILTER=com.trapedza.bankfusion.filter.refimpl
+CODE_GEN_PKG_MF=com.trapedza.bankfusion.mf.refimpl
+CODE_GEN_PKG_PRODUCT=com.trapedza.bankfusion.product.refimpl
+CODE_GEN_PKG_RULE=com.trapedza.bankfusion.rules.refimpl
+CODE_GEN_PKG_STEP=com.trapedza.bankfusion.steps.refimpl
+CODE_GEN_PROJECT=BPCodeGeneration
+REF_CLASSES_PROJECT=BPCodeGeneration
+eclipse.preferences.version=1

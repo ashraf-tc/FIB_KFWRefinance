@@ -1,0 +1,61 @@
+package com.trapedza.bankfusion.mf.refimpl;
+import com.trapedza.bankfusion.core.*;
+import java.util.*;
+import com.trapedza.bankfusion.microflow.*;
+import com.trapedza.bankfusion.servercommon.microflow.*;
+import com.trapedza.bankfusion.utils.Utils;
+import com.trapedza.bankfusion.servercommon.factory.StaticMFFactory;
+import com.trapedza.bankfusion.servercommon.commands.BankFusionEnvironment;
+public class _MFCE_LEN_RefinanceRateChange_PRC extends StaticMicroFlow {
+public Object forward(Map dataMap) throws BankFusionException {
+
+	Object returnStep = null;
+	int currentExecutionPoint = getStateObject().getExecutionPoint();
+	returnStep = executeGroupCode(dataMap);
+	return returnStep;
+}
+
+public ActivityStep getStartFatom(BankFusionEnvironment env) throws BankFusionException {
+
+	ActivityGroup grp = (new StaticMFFactory())
+			.getStaticGroup("com.trapedza.bankfusion.mf.refimpl._MFCE_LEN_RefinanceRateChange_PRC_0", env);
+	grp.init(env);
+	return grp.getStartFatom();
+}
+
+public ActivityStep getEndFatom(BankFusionEnvironment env) throws BankFusionException {
+
+	ActivityGroup grp = (new StaticMFFactory())
+			.getStaticGroup("com.trapedza.bankfusion.mf.refimpl._MFCE_LEN_RefinanceRateChange_PRC_2", env);
+	grp.init(env);
+	return grp.getEndFatom();
+}
+
+public ActivityStep populateAndGetEndFatom(BankFusionEnvironment env, ExceptionInfo ei) throws BankFusionException {
+
+	ActivityGroup grp = (new StaticMFFactory())
+			.getStaticGroup("com.trapedza.bankfusion.mf.refimpl._MFCE_LEN_RefinanceRateChange_PRC_2", env);
+	grp.init(env);
+	grp.createErrorResponse(ei, getStateObject(), env);
+	return grp.getEndFatom();
+}
+
+public long getVersion() {
+	return 12L;
+}
+
+public int determineAlternateFlow(int currentExecutionPoint, ActivityStep lastStep) {
+
+
+	return -1;
+}
+
+public boolean isMFOptimized() {
+	return false;
+}
+
+public boolean isWorkFlow() {
+	return false;
+}
+
+}

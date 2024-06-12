@@ -1,0 +1,51 @@
+package com.ce.ratechange.batch;
+
+import com.misys.cbs.common.util.log.CBSLogger;
+import com.trapedza.bankfusion.batch.fatom.AbstractPersistableFatomContext;
+import com.trapedza.bankfusion.batch.process.AbstractBatchProcess;
+import com.trapedza.bankfusion.batch.process.AbstractProcessAccumulator;
+import com.trapedza.bankfusion.persistence.core.IPersistenceObjectsFactory;
+import com.trapedza.bankfusion.servercommon.commands.BankFusionEnvironment;
+import com.trapedza.bankfusion.servercommon.core.BankFusionThreadLocal;
+
+public class RefinanceRateChangeProcess extends AbstractBatchProcess {
+	private BankFusionEnvironment env;
+	IPersistenceObjectsFactory factory;
+	private RefinanceRateChangeAccumulator accumulator;
+	private RefinanceRateChangeContext context;
+
+	private CBSLogger LOGGER = new CBSLogger(RefinanceRateChangeProcess.class.getName());
+
+	public RefinanceRateChangeProcess(AbstractPersistableFatomContext context) {
+		super(context);
+		this.env = BankFusionThreadLocal.getBankFusionEnvironment();
+		this.context = (RefinanceRateChangeContext) context;
+	}
+
+	@Override
+	public AbstractProcessAccumulator getAccumulator() {
+		return accumulator;
+	}
+
+	@Override
+	public void init() {
+		initialiseAccumulator();
+	}
+
+	@Override
+	protected void initialiseAccumulator() {
+		Object[] acc = new Object[0];
+		accumulator = new RefinanceRateChangeAccumulator(acc);
+
+	}
+
+	@Override
+	public AbstractProcessAccumulator process(int pageToProcess) {
+		LOGGER.info("process()", "Testbatchprocess started");
+		factory = BankFusionThreadLocal.getPersistanceFactory();
+		return accumulator;
+	}
+	
+}
+
+

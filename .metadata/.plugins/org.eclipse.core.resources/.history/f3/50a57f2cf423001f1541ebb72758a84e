@@ -1,0 +1,19 @@
+package com.ce.fatom;
+
+import com.misys.bankfusion.serviceinvocation.IUserExitInvoker;
+import com.misys.userexit.common.UserExitUtil;
+import bf.com.misys.cbs.userexit.types.OpenAccountDetails;
+
+public class ValidateKFWDetails implements IUserExitInvoker {
+
+	@Override
+	public Object invokeService(Object paramObject) {
+		// TODO Auto-generated method stub
+		OpenAccountDetails accountDetails = (OpenAccountDetails) paramObject;
+		UserExitUtil.printMessage("********* Open Account Validation Details *********");
+		UserExitUtil.printXMLTag(accountDetails);
+		return paramObject;
+	}
+
+
+}

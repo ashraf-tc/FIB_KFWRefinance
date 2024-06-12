@@ -1,0 +1,23 @@
+package com.ce.fatom;
+
+import java.util.Map;
+
+import com.misys.bankfusion.serviceinvocation.IUserExitInvoker;
+import com.misys.cbs.common.util.log.CBSLogger;
+import com.trapedza.bankfusion.servercommon.commands.BankFusionEnvironment;
+import com.trapedza.bankfusion.servercommon.core.UpdateAuditLoggerManager;
+import com.trapedza.bankfusion.servercommon.extensionpoints.ExtensionPoint;
+
+public class ValidateKFWDetails implements IUserExitInvoker {
+
+	@Override
+	public Object invokeService(Object arg0) {
+		// TODO Auto-generated method stub
+		OpenAccountDetails accountDetails = (OpenAccountDetails) paramObject;
+		UserExitUtil.printMessage("********* Open Account Validation Details *********");
+		UserExitUtil.printXMLTag(accountDetails);
+		return null;
+	}
+
+
+}

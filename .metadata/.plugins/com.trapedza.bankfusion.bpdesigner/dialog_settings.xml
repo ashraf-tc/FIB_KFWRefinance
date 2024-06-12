@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.trapedza.bankfusion.bpdesigner.mapper.MapperDialog">
+		<item value="Input Tags" key="preferredPluginName"/>
+		<item value="395" key="x"/>
+		<item value="1525" key="width"/>
+		<item value="0" key="y"/>
+		<item value="914" key="height"/>
+	</section>
+	<section name="com.trapedza.bankfusion.bpdesigner.messaging.MsgPropertyDialog">
+		<item value="480" key="x"/>
+		<item value="820" key="width"/>
+		<item value="255" key="y"/>
+		<item value="489" key="height"/>
+	</section>
+	<section name="com.trapedza.bankfusion.securityGUI.ui.AddRemoveArtefactsDialog">
+		<item value="480" key="x"/>
+		<item value="960" key="width"/>
+		<item value="255" key="y"/>
+		<item value="510" key="height"/>
+	</section>
+</section>

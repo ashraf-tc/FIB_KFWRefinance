@@ -1,0 +1,13 @@
+package com.ce.fatom;
+
+import java.util.Map;
+
+import com.misys.cbs.common.util.log.CBSLogger;
+import com.trapedza.bankfusion.servercommon.commands.BankFusionEnvironment;
+import com.trapedza.bankfusion.servercommon.core.UpdateAuditLoggerManager;
+import com.trapedza.bankfusion.servercommon.extensionpoints.ExtensionPoint;
+
+public class ValidateKFWDetails implements ExtensionPoint {
+
+
+}

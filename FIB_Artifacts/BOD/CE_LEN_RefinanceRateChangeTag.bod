@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tfsBusinessObject>
+    <ns26:description xmlns:ns26="http://castor.exolab.org/"></ns26:description>
+    <ns27:tfsApplicationId xmlns:ns27="http://castor.exolab.org/">Essence-DE-FIB</ns27:tfsApplicationId>
+    <ns28:boBindingGlobalZonal xmlns:ns28="http://castor.exolab.org/">Global</ns28:boBindingGlobalZonal>
+    <ns29:UDFEnabledFlag xmlns:ns29="http://castor.exolab.org/">false</ns29:UDFEnabledFlag>
+    <ns30:udfEnabledAnyType xmlns:ns30="http://castor.exolab.org/"></ns30:udfEnabledAnyType>
+    <ns31:udfExtensionBindingTableName xmlns:ns31="http://castor.exolab.org/">CE_LEN_REFINANCERATECHANGETAG</ns31:udfExtensionBindingTableName>
+    <attributes>
+        <ns32:columnEntry xmlns:ns32="http://castor.exolab.org/"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+            <key xsi:type="java:java.lang.String">IsReversed</key>
+            <value ns32:attributeID="IsReversed"
+                ns32:attributeType="ATTR_BOOLEAN"
+                ns32:columnDescription="" ns32:currencyAttributeID=""
+                ns32:readOnly="false" ns32:allowNull="false"
+                ns32:defaultValue="false" ns32:ifBOExtended="false" xsi:type="columnEntry">
+                <ns32:customisable>false</ns32:customisable>
+                <ns32:primaryKeyInd>false</ns32:primaryKeyInd>
+                <ns32:inherited>false</ns32:inherited>
+                <ns32:complextypeElementName></ns32:complextypeElementName>
+                <ns32:complextypeElementType></ns32:complextypeElementType>
+                <ns32:anyTypeElementName></ns32:anyTypeElementName>
+                <ns32:anyTypeComplexType></ns32:anyTypeComplexType>
+                <ns32:anyTypeSpecificComplexType></ns32:anyTypeSpecificComplexType>
+            </value>
+        </ns32:columnEntry>
+        <ns33:columnEntry xmlns:ns33="http://castor.exolab.org/"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+            <key xsi:type="java:java.lang.String">AccountID</key>
+            <value ns33:attributeID="AccountID"
+                ns33:attributeType="ATTR_STRING"
+                ns33:columnDescription="" ns33:currencyAttributeID=""
+                ns33:readOnly="false" ns33:allowNull="false"
+                ns33:defaultValue=" " ns33:ifBOExtended="false" xsi:type="columnEntry">
+                <ns33:customisable>false</ns33:customisable>
+                <ns33:primaryKeyInd>true</ns33:primaryKeyInd>
+                <ns33:inherited>false</ns33:inherited>
+                <ns33:complextypeElementName></ns33:complextypeElementName>
+                <ns33:complextypeElementType></ns33:complextypeElementType>
+                <ns33:anyTypeElementName></ns33:anyTypeElementName>
+                <ns33:anyTypeComplexType></ns33:anyTypeComplexType>
+                <ns33:anyTypeSpecificComplexType></ns33:anyTypeSpecificComplexType>
+            </value>
+        </ns33:columnEntry>
+        <ns34:columnEntry xmlns:ns34="http://castor.exolab.org/"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+            <key xsi:type="java:java.lang.String">BaseRate</key>
+            <value ns34:attributeID="BaseRate"
+                ns34:attributeType="bf.com.misys.ub.types.BIGDECIMAL"
+                ns34:columnDescription="" ns34:currencyAttributeID=""
+                ns34:readOnly="false" ns34:allowNull="true"
+                ns34:defaultValue="" ns34:ifBOExtended="false" xsi:type="columnEntry">
+                <ns34:customisable>false</ns34:customisable>
+                <ns34:primaryKeyInd>false</ns34:primaryKeyInd>
+                <ns34:inherited>false</ns34:inherited>
+                <ns34:complextypeElementName></ns34:complextypeElementName>
+                <ns34:complextypeElementType></ns34:complextypeElementType>
+                <ns34:anyTypeElementName></ns34:anyTypeElementName>
+                <ns34:anyTypeComplexType></ns34:anyTypeComplexType>
+                <ns34:anyTypeSpecificComplexType></ns34:anyTypeSpecificComplexType>
+            </value>
+        </ns34:columnEntry>
+        <ns35:columnEntry xmlns:ns35="http://castor.exolab.org/"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+            <key xsi:type="java:java.lang.String">margin</key>
+            <value ns35:attributeID="margin"
+                ns35:attributeType="bf.com.misys.cbs.types.BigDecimal"
+                ns35:columnDescription="" ns35:currencyAttributeID=""
+                ns35:readOnly="false" ns35:allowNull="true"
+                ns35:defaultValue="" ns35:ifBOExtended="false" xsi:type="columnEntry">
+                <ns35:customisable>false</ns35:customisable>
+                <ns35:primaryKeyInd>false</ns35:primaryKeyInd>
+                <ns35:inherited>false</ns35:inherited>
+                <ns35:complextypeElementName></ns35:complextypeElementName>
+                <ns35:complextypeElementType></ns35:complextypeElementType>
+                <ns35:anyTypeElementName></ns35:anyTypeElementName>
+                <ns35:anyTypeComplexType></ns35:anyTypeComplexType>
+                <ns35:anyTypeSpecificComplexType></ns35:anyTypeSpecificComplexType>
+            </value>
+        </ns35:columnEntry>
+        <ns36:columnEntry xmlns:ns36="http://castor.exolab.org/"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+            <key xsi:type="java:java.lang.String">RowSeq</key>
+            <value ns36:attributeID="RowSeq"
+                ns36:attributeType="ATTR_NUMBER"
+                ns36:columnDescription="" ns36:currencyAttributeID=""
+                ns36:readOnly="false" ns36:allowNull="false"
+                ns36:defaultValue="0" ns36:ifBOExtended="false" xsi:type="columnEntry">
+                <ns36:customisable>false</ns36:customisable>
+                <ns36:primaryKeyInd>false</ns36:primaryKeyInd>
+                <ns36:inherited>false</ns36:inherited>
+                <ns36:complextypeElementName></ns36:complextypeElementName>
+                <ns36:complextypeElementType></ns36:complextypeElementType>
+                <ns36:anyTypeElementName></ns36:anyTypeElementName>
+                <ns36:anyTypeComplexType></ns36:anyTypeComplexType>
+                <ns36:anyTypeSpecificComplexType></ns36:anyTypeSpecificComplexType>
+            </value>
+        </ns36:columnEntry>
+        <ns37:columnEntry xmlns:ns37="http://castor.exolab.org/"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+            <key xsi:type="java:java.lang.String">VERSIONNUM</key>
+            <value ns37:attributeID="VERSIONNUM"
+                ns37:attributeType="ATTR_VERSION_NO"
+                ns37:columnDescription="Version Number"
+                ns37:currencyAttributeID="" ns37:readOnly="true"
+                ns37:allowNull="false" ns37:defaultValue="0"
+                ns37:ifBOExtended="false" xsi:type="columnEntry">
+                <ns37:customisable>false</ns37:customisable>
+                <ns37:primaryKeyInd>false</ns37:primaryKeyInd>
+                <ns37:inherited>false</ns37:inherited>
+                <ns37:complextypeElementName></ns37:complextypeElementName>
+                <ns37:complextypeElementType></ns37:complextypeElementType>
+                <ns37:anyTypeElementName></ns37:anyTypeElementName>
+                <ns37:anyTypeComplexType></ns37:anyTypeComplexType>
+                <ns37:anyTypeSpecificComplexType></ns37:anyTypeSpecificComplexType>
+            </value>
+        </ns37:columnEntry>
+        <ns38:columnEntry xmlns:ns38="http://castor.exolab.org/"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+            <key xsi:type="java:java.lang.String">Status</key>
+            <value ns38:attributeID="Status"
+                ns38:attributeType="ATTR_STRING"
+                ns38:columnDescription="" ns38:currencyAttributeID=""
+                ns38:readOnly="false" ns38:allowNull="false"
+                ns38:defaultValue=" U" ns38:ifBOExtended="false" xsi:type="columnEntry">
+                <ns38:customisable>false</ns38:customisable>
+                <ns38:primaryKeyInd>false</ns38:primaryKeyInd>
+                <ns38:inherited>false</ns38:inherited>
+                <ns38:complextypeElementName></ns38:complextypeElementName>
+                <ns38:complextypeElementType></ns38:complextypeElementType>
+                <ns38:anyTypeElementName></ns38:anyTypeElementName>
+                <ns38:anyTypeComplexType></ns38:anyTypeComplexType>
+                <ns38:anyTypeSpecificComplexType></ns38:anyTypeSpecificComplexType>
+            </value>
+        </ns38:columnEntry>
+        <ns39:columnEntry xmlns:ns39="http://castor.exolab.org/"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+            <key xsi:type="java:java.lang.String">BaseCode</key>
+            <value ns39:attributeID="BaseCode"
+                ns39:attributeType="ATTR_STRING"
+                ns39:columnDescription="" ns39:currencyAttributeID=""
+                ns39:readOnly="false" ns39:allowNull="true"
+                ns39:defaultValue=" " ns39:ifBOExtended="false" xsi:type="columnEntry">
+                <ns39:customisable>false</ns39:customisable>
+                <ns39:primaryKeyInd>false</ns39:primaryKeyInd>
+                <ns39:inherited>false</ns39:inherited>
+                <ns39:complextypeElementName></ns39:complextypeElementName>
+                <ns39:complextypeElementType></ns39:complextypeElementType>
+                <ns39:anyTypeElementName></ns39:anyTypeElementName>
+                <ns39:anyTypeComplexType></ns39:anyTypeComplexType>
+                <ns39:anyTypeSpecificComplexType></ns39:anyTypeSpecificComplexType>
+            </value>
+        </ns39:columnEntry>
+    </attributes>
+    <compositeAttributes/>
+    <ns40:compositeKeyInd xmlns:ns40="http://castor.exolab.org/">false</ns40:compositeKeyInd>
+    <tfsDSN>
+        <ns41:tfsDSNEntry xmlns:ns41="http://castor.exolab.org/"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:org.exolab.castor.mapping.MapItem">
+            <key xsi:type="java:java.lang.String">default</key>
+            <value ns41:dsnReference="default" ns41:relationship="1:1"
+                ns41:primary="true" xsi:type="tfsDSNEntry">
+                <rowFilter/>
+                <ns41:operationProvider xsi:type="java:org.exolab.castor.mapping.MapItem">
+                    <key xsi:type="java:java.lang.String">default</key>
+                    <value ns41:id="default" ns41:operations="*"
+                        ns41:type="sql" xsi:type="operationProvider">
+                        <ns41:keyValue xsi:type="java:org.exolab.castor.mapping.MapItem">
+                            <key xsi:type="java:java.lang.String">TABLE</key>
+                            <value xsi:type="java:java.lang.String">REFINANCERATECHANGETAG</value>
+                        </ns41:keyValue>
+                    </value>
+                </ns41:operationProvider>
+                <attributesProvided>
+                    <attribute/>
+                </attributesProvided>
+            </value>
+        </ns41:tfsDSNEntry>
+    </tfsDSN>
+    <tfsFinderMethods/>
+    <tfsUniqueKeys/>
+    <ns42:tfsQueryModes xmlns:ns42="http://castor.exolab.org/"
+        ns42:create="true" ns42:update="true" ns42:delete="true"
+        ns42:find="true" ns42:join="true" ns42:createEditable="true"
+        ns42:updateEditable="true" ns42:deleteEditable="true"
+        ns42:findEditable="true" ns42:joinEditable="true"/>
+    <ns43:tfsSuperClass xmlns:ns43="http://castor.exolab.org/"/>
+    <tfsExtensionPoints/>
+    <inputTags/>
+    <outputTags/>
+    <ns44:extendingBO xmlns:ns44="http://castor.exolab.org/"></ns44:extendingBO>
+    <ns45:boDisplayName xmlns:ns45="http://castor.exolab.org/">CE_LEN_RefinanceRateChangeTag</ns45:boDisplayName>
+    <ns46:editedDate xmlns:ns46="http://castor.exolab.org/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">2024-06-11 13:19:17.177</ns46:editedDate>
+    <ns47:namespace xmlns:ns47="http://castor.exolab.org/">com.fbp.customextn</ns47:namespace>
+    <ns48:accessModifier xmlns:ns48="http://castor.exolab.org/">public</ns48:accessModifier>
+    <ns49:deprecated xmlns:ns49="http://castor.exolab.org/">false</ns49:deprecated>
+    <ns50:deprecationComments xmlns:ns50="http://castor.exolab.org/"></ns50:deprecationComments>
+</tfsBusinessObject>

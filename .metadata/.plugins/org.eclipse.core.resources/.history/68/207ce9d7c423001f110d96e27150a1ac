@@ -1,0 +1,54 @@
+package com.ce.Fatoms;
+
+import java.util.Map;
+
+import com.misys.cbs.common.util.log.CBSLogger;
+import com.tc.AIB.AutoAssignUser;
+import com.trapedza.bankfusion.servercommon.commands.BankFusionEnvironment;
+import com.trapedza.bankfusion.servercommon.core.UpdateAuditLoggerManager;
+import com.trapedza.bankfusion.servercommon.extensionpoints.ExtensionPoint;
+
+public class ValidateKFWDetails implements ExtensionPoint  {
+	private static CBSLogger LOGGER = new CBSLogger(ValidateKFWDetails.class.getName());
+	@SuppressWarnings("rawtypes")
+	@Override
+	public void setAttributes(Map var1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Map getAttributes() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void process(BankFusionEnvironment env) {
+		@SuppressWarnings("rawtypes")
+		Map data = env.getData();
+		LOGGER.info("KFW Details Validator",data.toString());
+		
+	}
+
+	@Override
+	public boolean isComplete() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void continueProcess() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void registerWithUpdateLoggerManager(UpdateAuditLoggerManager var1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	
+}

@@ -1,0 +1,33 @@
+
+package com.trapedza.bankfusion.steps.refimpl;
+
+import java.util.List;
+import java.util.Iterator;
+import com.trapedza.bankfusion.core.DataType;
+import com.trapedza.bankfusion.microflow.ActivityStep;
+import com.trapedza.bankfusion.core.ExtensionPointHelper;
+import com.trapedza.bankfusion.core.BankFusionException;
+import bf.com.misys.bankfusion.attributes.UserDefinedFields;
+import com.trapedza.bankfusion.servercommon.commands.BankFusionEnvironment;
+import java.util.ArrayList;
+
+/**
+* 
+* DO NOT CHANGE MANUALLY - THIS IS AUTOMATICALLY GENERATED CODE.<br>
+* This will be overwritten by any subsequent code-generation.
+*
+*/
+public abstract class AbstractCE_LEN_RefinanceRatechange extends com.trapedza.bankfusion.batch.fatom.AbstractBatchFatom
+		implements ICE_LEN_RefinanceRatechange {
+	/**
+	 * @deprecated use no-argument constructor!
+	 */
+	public AbstractCE_LEN_RefinanceRatechange(BankFusionEnvironment env) {
+	}
+
+	public AbstractCE_LEN_RefinanceRatechange() {
+	}
+
+	public void nullProcess() {
+	}
+}

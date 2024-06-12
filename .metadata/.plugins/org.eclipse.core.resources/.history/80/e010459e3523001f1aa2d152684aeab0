@@ -1,0 +1,50 @@
+package com.ce.Validator;
+
+import java.util.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import com.misys.fbe.common.util.CommonUtil;
+import com.trapedza.bankfusion.core.BankFusionException;
+import com.trapedza.bankfusion.core.SystemInformationManager;
+import com.trapedza.bankfusion.servercommon.commands.BankFusionEnvironment;
+import com.trapedza.bankfusion.steps.refimpl.AbstractCE_LEN_ValidateKFWDetails;
+
+@SuppressWarnings("serial")
+public class ValidateKFWDetails extends AbstractCE_LEN_ValidateKFWDetails {
+
+	@Override
+	public void process(BankFusionEnvironment env) throws BankFusionException {
+		super.process(env);
+		String process = getF_IN_PROCESS();
+		if(process=="BusinessDateValidation") {
+			Date currBusinessDate = SystemInformationManager.getInstance().getBFBusinessDate();
+			String UDF_INFLOWDATE_STR = getF_IN_UDF_INFLOWDATE();
+		    Date UDF_INFLOWDATE = new Date(0);
+			try {
+				UDF_INFLOWDATE = (Date) new SimpleDateFormat("yyyy-MM-dd").parse(UDF_INFLOWDATE_STR);
+			} catch (ParseException e) {
+				e.printStackTrace();
+			}  
+			if(UDF_INFLOWDATE.before(currBusinessDate)) {
+				String[] args = {""};
+				args[0] = "The Inflow Date must be greater than the current Business Date";
+				Integer eventNumber = 80000002;
+				CommonUtil.handleParameterizedEvent(eventNumber, args);
+			}
+		}
+		else {
+			
+		}
+	}
+
+	public ValidateKFWDetails() {
+		super();
+	}
+
+	@SuppressWarnings("deprecation")
+	public ValidateKFWDetails(BankFusionEnvironment env) {
+		super(env);
+	}
+
+	
+}

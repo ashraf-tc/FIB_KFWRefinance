@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;BPCodeGeneration&apos;" deleteContents="false" description="Delete resource &apos;BPCodeGeneration&apos;" element1="/BPCodeGeneration" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1716902357963"/>&#x0A;<refactoring comment="Delete resource &apos;FIB_Artifacts/ASD/CE_LEN_RefinanceRateChange.asd&apos;" deleteContents="false" description="Delete resource &apos;FIB_Artifacts/ASD/CE_LEN_RefinanceRateChange.asd&apos;" element1="/FIB_Artifacts/ASD/CE_LEN_RefinanceRateChange.asd" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1717136924572"/>
+</session>

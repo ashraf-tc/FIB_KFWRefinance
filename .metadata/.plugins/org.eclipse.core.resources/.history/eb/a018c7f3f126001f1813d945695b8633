@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:BankFusionMicroFlow="http://www.misys.com/bankfusion/microflow" xmlns:bf_artefact="http://www.misys.com/bankfusion/artefact" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <BankFusionMicroFlow:MicroFlow xmi:id="_jsaJsCbvEe-7UMlqs8FOsA" artefactId="CE_LEN_RefinanceRateChange_PRC" name="CE_LEN_RefinanceRateChange_PRC" versionId="0" namespace="com.misys.bankfusion.ubcore" accessModifier="public" bpdVersion="4.300">
+    <steps xmi:type="BankFusionMicroFlow:StartStep" xmi:id="_jsaJsSbvEe-7UMlqs8FOsA" name="Start_Step0" type="StartFatom">
+      <targetConnections xmi:type="BankFusionMicroFlow:Connection" xmi:id="_jsaJsibvEe-7UMlqs8FOsA" source="_jsaJsSbvEe-7UMlqs8FOsA" target="_jsaJ6ibvEe-7UMlqs8FOsA"/>
+      <inputTags xmi:type="bf_artefact:Tag" xmi:id="_jsaJsybvEe-7UMlqs8FOsA" name="PUBLISHNAME" baseAttribute="ATTR_STRING" description="Publish Name" displayName="Start_Step0_PUBLISHNAME" dataType="STRING" visible="true" updatable="true" preservedName="bf:ATTR_STRING" targetNamespace="http://www.misys.com/bankfusion/proprietary/attributes" tagType="019" uiDisplayType="LABELTEXTBOX" stepId="0"/>
+      <inputTags xmi:type="bf_artefact:Tag" xmi:id="_jsaJtCbvEe-7UMlqs8FOsA" name="BRANCHNAME" baseAttribute="ATTR_NAME" description="Branch Name" displayName="Start_Step0_BRANCHNAME" dataType="STRING" visible="true" updatable="true" preservedName="bf:ATTR_NAME" targetNamespace="http://www.misys.com/bankfusion/proprietary/attributes" tagType="019" uiDisplayType="LABELTEXTBOX" stepId="0">
+        <value xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJtSbvEe-7UMlqs8FOsA" classType="java.lang.String" value="Branch 01"/>
+        <defaultValue xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJtibvEe-7UMlqs8FOsA" classType="java.lang.String" value="Branch 01"/>
+      </inputTags>
+      <inputTags xmi:type="bf_artefact:Tag" xmi:id="_jsaJtybvEe-7UMlqs8FOsA" name="DATE" baseAttribute="ATTR_DATE" description="BankFusion Business Date" displayName="Start_Step0_DATE" dataType="DATE" visible="true" updatable="true" preservedName="bf:ATTR_DATE" targetNamespace="http://www.misys.com/bankfusion/proprietary/attributes" tagType="019" uiDisplayType="LABELTEXTBOX" stepId="0">
+        <value xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJuCbvEe-7UMlqs8FOsA" classType="java.sql.Date" value="1970-01-01"/>
+        <defaultValue xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJuSbvEe-7UMlqs8FOsA" classType="java.sql.Date" value="1970-01-01"/>
+      </inputTags>
+      <inputTags xmi:type="bf_artefact:Tag" xmi:id="_jsaJuibvEe-7UMlqs8FOsA" name="CHANNELID" baseAttribute="ATTR_STRING" description="Channel ID" displayName="Start_Step0_CHANNELID" dataType="STRING" visible="true" updatable="true" preservedName="bf:ATTR_STRING" targetNamespace="http://www.misys.com/bankfusion/proprietary/attributes" tagType="019" uiDisplayType="LABELTEXTBOX" stepId="0">
+        <value xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJuybvEe-7UMlqs8FOsA" classType="java.lang.String" value="WB"/>
+        <defaultValue xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJvCbvEe-7UMlqs8FOsA" classType="java.lang.String" value="WB"/>
+      </inputTags>
+      <inputTags xmi:type="bf_artefact:Tag" xmi:id="_jsaJvSbvEe-7UMlqs8FOsA" name="SYSTEMTIME" baseAttribute="ATTR_TIME" description="System Time" displayName="Start_Step0_SYSTEMTIME" dataType="TIME" visible="true" updatable="true" preservedName="bf:ATTR_TIME" targetNamespace="http://www.misys.com/bankfusion/proprietary/attributes" tagType="019" uiDisplayType="LABELTEXTBOX" stepId="0">
+        <value xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJvibvEe-7UMlqs8FOsA" classType="java.sql.Time" value="05:30:00"/>
+        <defaultValue xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJvybvEe-7UMlqs8FOsA" classType="java.sql.Time" value="05:30:00"/>
+      </inputTags>
+      <inputTags xmi:type="bf_artefact:Tag" xmi:id="_jsaJwCbvEe-7UMlqs8FOsA" name="LOCALE_LANGUAGE " baseAttribute="ATTR_STRING" description="Locale Langauage" displayName="Start_Step0_LOCALE_LANGUAGE " dataType="STRING" visible="true" updatable="true" preservedName="bf:ATTR_STRING" targetNamespace="http://www.misys.com/bankfusion/proprietary/attributes" tagType="019" uiDisplayType="LABELTEXTBOX" stepId="0">
+        <value xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJwSbvEe-7UMlqs8FOsA" classType="java.lang.String" value="en"/>
+        <defaultValue xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJwibvEe-7UMlqs8FOsA" classType="java.lang.String" value="en"/>
+      </inputTags>
+      <inputTags xmi:type="bf_artefact:Tag" xmi:id="_jsaJwybvEe-7UMlqs8FOsA" name="APPLICATIONID" baseAttribute="ATTR_STRING" description="Application ID" displayName="Start_Step0_APPLICATIONID" dataType="STRING" visible="true" updatable="true" preservedName="bf:ATTR_STRING" targetNamespace="http://www.misys.com/bankfusion/proprietary/attributes" tagType="019" uiDisplayType="TEXTBOX" stepId="0">
+        <value xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJxCbvEe-7UMlqs8FOsA" classType="java.lang.String" value="BANKFUSION"/>
+        <defaultValue xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJxSbvEe-7UMlqs8FOsA" classType="java.lang.String" value="BANKFUSION"/>
+      </inputTags>
+      <inputTags xmi:type="bf_artefact:Tag" xmi:id="_jsaJxibvEe-7UMlqs8FOsA" name="TIME" baseAttribute="ATTR_TIME" description="BankFusion Business Time" displayName="Start_Step0_TIME" dataType="TIME" visible="true" updatable="true" preservedName="bf:ATTR_TIME" targetNamespace="http://www.misys.com/bankfusion/proprietary/attributes" tagType="019" uiDisplayType="LABELTEXTBOX" stepId="0">
+        <value xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJxybvEe-7UMlqs8FOsA" classType="java.sql.Time" value="05:30:00"/>
+        <defaultValue xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJyCbvEe-7UMlqs8FOsA" classType="java.sql.Time" value="05:30:00"/>
+      </inputTags>
+      <inputTags xmi:type="bf_artefact:Tag" xmi:id="_jsaJySbvEe-7UMlqs8FOsA" name="DATETIME" baseAttribute="ATTR_DATETIME" description="BankFusion Business Date and Time" displayName="Start_Step0_DATETIME" dataType="TIMESTAMP" visible="true" updatable="true" preservedName="bf:ATTR_DATETIME" targetNamespace="http://www.misys.com/bankfusion/proprietary/attributes" tagType="019" uiDisplayType="LABELTEXTBOX" stepId="0">
+        <value xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJyibvEe-7UMlqs8FOsA" classType="java.sql.Timestamp" value="1970-01-01 05:30:00.0"/>
+        <defaultValue xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJyybvEe-7UMlqs8FOsA" classType="java.sql.Timestamp" value="1970-01-01 05:30:00.0"/>
+      </inputTags>
+      <inputTags xmi:type="bf_artefact:Tag" xmi:id="_jsaJzCbvEe-7UMlqs8FOsA" name="OUTPUTMASK" baseAttribute="ATTR_STRING" description="Output Mask" displayName="Start_Step0_OUTPUTMASK" dataType="STRING" visible="true" updatable="true" preservedName="bf:ATTR_STRING" targetNamespace="http://www.misys.com/bankfusion/proprietary/attributes" tagType="019" uiDisplayType="LABELTEXTBOX" stepId="0"/>
+      <inputTags xmi:type="bf_artefact:Tag" xmi:id="_jsaJzSbvEe-7UMlqs8FOsA" name="ACTIVEAUDITFATOMCOUNT" baseAttribute="ATTR_NUMBER" description="ACTIVEAUDITFATOMCOUNT" displayName="Start_Step0_ACTIVEAUDITFATOMCOUNT" dataType="INTEGER" visible="true" updatable="true" preservedName="bf:ATTR_NUMBER" targetNamespace="http://www.misys.com/bankfusion/proprietary/attributes" tagType="019" uiDisplayType="LABELTEXTBOX" stepId="0">
+        <value xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJzibvEe-7UMlqs8FOsA" classType="java.lang.Integer" value="0"/>
+        <defaultValue xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJzybvEe-7UMlqs8FOsA" classType="java.lang.Integer" value="0"/>
+      </inputTags>
+      <inputTags xmi:type="bf_artefact:Tag" xmi:id="_jsaJ0CbvEe-7UMlqs8FOsA" name="ZONE" baseAttribute="ATTR_STRING" description="Zone" displayName="Start_Step0_ZONE" dataType="STRING" visible="true" updatable="true" preservedName="bf:ATTR_STRING" targetNamespace="http://www.misys.com/bankfusion/proprietary/attributes" tagType="019" uiDisplayType="LABELTEXTBOX" stepId="0"/>
+      <inputTags xmi:type="bf_artefact:Tag" xmi:id="_jsaJ0SbvEe-7UMlqs8FOsA" name="USERNAME" baseAttribute="ATTR_NAME" description="User Name" displayName="Start_Step0_USERNAME" dataType="STRING" visible="true" updatable="true" preservedName="bf:ATTR_NAME" targetNamespace="http://www.misys.com/bankfusion/proprietary/attributes" tagType="019" uiDisplayType="LABELTEXTBOX" stepId="0">
+        <value xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJ0ibvEe-7UMlqs8FOsA" classType="java.lang.String" value="brad"/>
+        <defaultValue xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJ0ybvEe-7UMlqs8FOsA" classType="java.lang.String" value="brad"/>
+      </inputTags>
+      <inputTags xmi:type="bf_artefact:Tag" xmi:id="_jsaJ1CbvEe-7UMlqs8FOsA" name="LOCALE_COUNTRY" baseAttribute="ATTR_STRING" description="Locale Country" displayName="Start_Step0_LOCALE_COUNTRY" dataType="STRING" visible="true" updatable="true" preservedName="bf:ATTR_STRING" targetNamespace="http://www.misys.com/bankfusion/proprietary/attributes" tagType="019" uiDisplayType="LABELTEXTBOX" stepId="0">
+        <value xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJ1SbvEe-7UMlqs8FOsA" classType="java.lang.String" value="GB"/>
+        <defaultValue xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJ1ibvEe-7UMlqs8FOsA" classType="java.lang.String" value="GB"/>
+      </inputTags>
+      <inputTags xmi:type="bf_artefact:Tag" xmi:id="_jsaJ1ybvEe-7UMlqs8FOsA" name="SYSTEMDATETIME" baseAttribute="ATTR_DATETIME" description="System Date and time" displayName="Start_Step0_SYSTEMDATETIME" dataType="TIMESTAMP" visible="true" updatable="true" preservedName="bf:ATTR_DATETIME" targetNamespace="http://www.misys.com/bankfusion/proprietary/attributes" tagType="019" uiDisplayType="LABELTEXTBOX" stepId="0">
+        <value xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJ2CbvEe-7UMlqs8FOsA" classType="java.sql.Timestamp" value="1970-01-01 05:30:00.0"/>
+        <defaultValue xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJ2SbvEe-7UMlqs8FOsA" classType="java.sql.Timestamp" value="1970-01-01 05:30:00.0"/>
+      </inputTags>
+      <inputTags xmi:type="bf_artefact:Tag" xmi:id="_jsaJ2ibvEe-7UMlqs8FOsA" name="ISOCURRENCYCODE" baseAttribute="ATTR_CODE" description="ISO Currency Code" displayName="Start_Step0_ISOCURRENCYCODE" dataType="STRING" visible="true" updatable="true" preservedName="bf:ATTR_CODE" targetNamespace="http://www.misys.com/bankfusion/proprietary/attributes" tagType="019" uiDisplayType="LABELTEXTBOX" stepId="0"/>
+      <inputTags xmi:type="bf_artefact:Tag" xmi:id="_jsaJ2ybvEe-7UMlqs8FOsA" name="NUMBEROFROWSFORPAGING" baseAttribute="ATTR_NUMBER" description="Number of rows for paging" displayName="Start_Step0_NUMBEROFROWSFORPAGING" dataType="INTEGER" visible="true" updatable="true" preservedName="bf:ATTR_NUMBER" targetNamespace="http://www.misys.com/bankfusion/proprietary/attributes" tagType="019" uiDisplayType="LABELTEXTBOX" stepId="0">
+        <value xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJ3CbvEe-7UMlqs8FOsA" classType="java.lang.Integer" value="0"/>
+        <defaultValue xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJ3SbvEe-7UMlqs8FOsA" classType="java.lang.Integer" value="0"/>
+      </inputTags>
+      <inputTags xmi:type="bf_artefact:Tag" xmi:id="_jsaJ3ibvEe-7UMlqs8FOsA" name="INPUTMASK" baseAttribute="ATTR_STRING" description="Input Mask" displayName="Start_Step0_INPUTMASK" dataType="STRING" visible="true" updatable="true" preservedName="bf:ATTR_STRING" targetNamespace="http://www.misys.com/bankfusion/proprietary/attributes" tagType="019" uiDisplayType="LABELTEXTBOX" stepId="0"/>
+      <inputTags xmi:type="bf_artefact:Tag" xmi:id="_jsaJ3ybvEe-7UMlqs8FOsA" name="BRANCHSORTCODE" baseAttribute="ATTR_CODE" description="Branch Sort Code" displayName="Start_Step0_BRANCHSORTCODE" dataType="STRING" visible="true" updatable="true" preservedName="bf:ATTR_CODE" targetNamespace="http://www.misys.com/bankfusion/proprietary/attributes" tagType="019" uiDisplayType="LABELTEXTBOX" stepId="0">
+        <value xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJ4CbvEe-7UMlqs8FOsA" classType="java.lang.String" value="00000001"/>
+        <defaultValue xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJ4SbvEe-7UMlqs8FOsA" classType="java.lang.String" value="00000001"/>
+      </inputTags>
+      <inputTags xmi:type="bf_artefact:Tag" xmi:id="_jsaJ4ibvEe-7UMlqs8FOsA" name="BANKLOGO" baseAttribute="ATTR_URL" description="Bank Logo" displayName="Start_Step0_BANKLOGO" dataType="STRING" visible="true" updatable="true" preservedName="bf:ATTR_URL" targetNamespace="http://www.misys.com/bankfusion/proprietary/attributes" tagType="019" uiDisplayType="LABELTEXTBOX" stepId="0"/>
+      <inputTags xmi:type="bf_artefact:Tag" xmi:id="_jsaJ4ybvEe-7UMlqs8FOsA" name="BANKNAME" baseAttribute="ATTR_NAME" description="Bank Name" displayName="Start_Step0_BANKNAME" dataType="STRING" visible="true" updatable="true" preservedName="bf:ATTR_NAME" targetNamespace="http://www.misys.com/bankfusion/proprietary/attributes" tagType="019" uiDisplayType="LABELTEXTBOX" stepId="0">
+        <value xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJ5CbvEe-7UMlqs8FOsA" classType="java.lang.String" value="MBANK"/>
+        <defaultValue xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJ5SbvEe-7UMlqs8FOsA" classType="java.lang.String" value="MBANK"/>
+      </inputTags>
+      <inputTags xmi:type="bf_artefact:Tag" xmi:id="_jsaJ5ibvEe-7UMlqs8FOsA" name="LOCALE_VARIANT " baseAttribute="ATTR_STRING" description="Locale Varient" displayName="Start_Step0_LOCALE_VARIANT " dataType="STRING" visible="true" updatable="true" preservedName="bf:ATTR_STRING" targetNamespace="http://www.misys.com/bankfusion/proprietary/attributes" tagType="019" uiDisplayType="LABELTEXTBOX" stepId="0"/>
+      <inputTags xmi:type="bf_artefact:Tag" xmi:id="_jsaJ5ybvEe-7UMlqs8FOsA" name="SYSTEMDATE" baseAttribute="ATTR_DATE" description="System Date" displayName="Start_Step0_SYSTEMDATE" dataType="DATE" visible="true" updatable="true" preservedName="bf:ATTR_DATE" targetNamespace="http://www.misys.com/bankfusion/proprietary/attributes" tagType="019" uiDisplayType="LABELTEXTBOX" stepId="0">
+        <value xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJ6CbvEe-7UMlqs8FOsA" classType="java.sql.Date" value="1970-01-01"/>
+        <defaultValue xmi:type="bf_artefact:TagValueObject" xmi:id="_jsaJ6SbvEe-7UMlqs8FOsA" classType="java.sql.Date" value="1970-01-01"/>
+      </inputTags>
+    </steps>
+    <steps xmi:type="BankFusionMicroFlow:EndStep" xmi:id="_jsaJ6ibvEe-7UMlqs8FOsA" name="EndFatom1" stepId="1" type="EndFatom"/>
+  </BankFusionMicroFlow:MicroFlow>
+  <notation:Diagram xmi:id="_jsgQUCbvEe-7UMlqs8FOsA" type="BankFusionMicroFlow" element="_jsaJsCbvEe-7UMlqs8FOsA" name="CE_LEN_RefinanceRateChange_PRC" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_jsgQUSbvEe-7UMlqs8FOsA"/>
+  </notation:Diagram>
+</xmi:XMI>

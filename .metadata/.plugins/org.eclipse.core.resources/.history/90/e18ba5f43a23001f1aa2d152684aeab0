@@ -1,0 +1,30 @@
+
+package com.trapedza.bankfusion.steps.refimpl;
+
+import com.trapedza.bankfusion.servercommon.commands.BankFusionEnvironment;
+import java.util.Map;
+import com.trapedza.bankfusion.core.BankFusionException;
+
+/**
+* 
+* DO NOT CHANGE MANUALLY - THIS IS AUTOMATICALLY GENERATED CODE.<br>
+* This will be overwritten by any subsequent code-generation.
+*
+*/
+public interface ICE_LEN_ValidateKFWDetails extends com.trapedza.bankfusion.servercommon.steps.refimpl.Processable {
+	public static final String IN_PROCESS = "PROCESS";
+	public static final String IN_UDF_INFLOWDATE = "UDF_INFLOWDATE";
+
+	public void process(BankFusionEnvironment env) throws BankFusionException;
+
+	public String getF_IN_PROCESS();
+
+	public void setF_IN_PROCESS(String param);
+
+	public String getF_IN_UDF_INFLOWDATE();
+
+	public void setF_IN_UDF_INFLOWDATE(String param);
+
+	@SuppressWarnings("rawtypes")
+	public Map getInDataMap();
+}

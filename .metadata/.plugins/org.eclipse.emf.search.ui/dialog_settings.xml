@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.misys.bankfusion.artefact.activityStep.search.ui.areas.ModelSearchParticipantArea">
+	</section>
+	<section name="QuerySection">
+		<item value="com.misys.bankfusion.artefact.activityStep.search.ui.BankFusionActivityStepPlainTextSearchID" key="SelectedQueryTabID"/>
+	</section>
+</section>

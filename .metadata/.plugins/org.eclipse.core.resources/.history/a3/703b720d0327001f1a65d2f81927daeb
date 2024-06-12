@@ -1,0 +1,17 @@
+
+package com.trapedza.bankfusion.steps.refimpl;
+
+import com.trapedza.bankfusion.core.BankFusionException;
+import com.trapedza.bankfusion.servercommon.commands.BankFusionEnvironment;
+
+/**
+* 
+* DO NOT CHANGE MANUALLY - THIS IS AUTOMATICALLY GENERATED CODE.<br>
+* This will be overwritten by any subsequent code-generation.
+*
+*/
+public interface ICE_LEN_RefinanceRatechange {
+	public void process(BankFusionEnvironment env) throws BankFusionException;
+
+	public void setStepName(String name);
+}

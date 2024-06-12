@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="ASCII"?>
+<bankfusion_activityStep:ActivityStep xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:bankfusion_activityStep="http://www.misys.com/bankfusion/activityStep" artefactId="CE_LEN_GetProductID" name="CE_LEN_GetProductID" description="" namespace="com.misys.bankfusion.ubcore" accessModifier="public"/>

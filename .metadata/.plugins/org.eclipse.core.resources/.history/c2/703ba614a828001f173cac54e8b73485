@@ -1,0 +1,37 @@
+package com.ce.fatom;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import com.ce.ratechange.batch.RefinanceRateChangeFatom;
+import com.misys.cbs.common.util.log.CBSLogger;
+import com.trapedza.bankfusion.bo.refimpl.IBOAccount;
+import com.trapedza.bankfusion.core.BankFusionException;
+import com.trapedza.bankfusion.servercommon.commands.BankFusionEnvironment;
+import com.trapedza.bankfusion.servercommon.core.BankFusionThreadLocal;
+import com.trapedza.bankfusion.steps.refimpl.AbstractCE_LEN_GetProductID;
+
+@SuppressWarnings("serial")
+public class GetProductId extends AbstractCE_LEN_GetProductID  {
+	private static String CLASS_NAME = GetProductId.class.getName();
+	private static CBSLogger LOGGER = new CBSLogger(CLASS_NAME);
+	@Override
+	public void process(BankFusionEnvironment env) throws BankFusionException {
+		// TODO Auto-generated method stub
+		super.process(env);
+		String accountNum = getF_IN_accountNum();
+		Connection connection;
+		connection = BankFusionThreadLocal.getPersistanceFactory().getJDBCConnection();
+		IBOAccount account = BankFusionThreadLocal.getPersistanceFactory().findByPrimaryKey(IBOAccount.BONAME, accountNum, true).;
+	}
+
+
+
+	public GetProductId() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}

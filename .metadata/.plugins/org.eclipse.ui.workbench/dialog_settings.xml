@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="475" key="DIALOG_X_ORIGIN"/>
+		<item value="57" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="250" key="dialogHeight"/>
+		<item value="350" key="dialogWidth"/>
+		<list key="textEntries">
+			<item value="2"/>
+			<item value="1"/>
+			<item value="1"/>
+			<item value="1"/>
+			<item value="1"/>
+			<item value="2"/>
+			<item value="1"/>
+		</list>
+		<list key="orderedElements">
+			<item value="com.trapedza.bankfusion.securityGUI.ui.SecurityGUIview"/>
+			<item value="org.eclipse.ui.externaltools.ExternalToolMenuDelegateMenu"/>
+			<item value="org.eclipse.papyrus.views.properties.propertyview"/>
+			<item value="org.jboss.tools.common.model.ui.wizard.newfile.NewPropertiesFileWizard"/>
+			<item value="org.eclipse.ui.preferencePages.FileEditors"/>
+			<item value="com.trapedza.bankfusion.bpdesigner.BPDPreferencePage"/>
+			<item value="com.trapedza.framework.pde.PDEPreferencePage"/>
+		</list>
+		<list key="orderedProviders">
+			<item value="org.eclipse.e4.ui.parts"/>
+			<item value="org.eclipse.ui.actions"/>
+			<item value="org.eclipse.ui.preferences"/>
+			<item value="org.eclipse.ui.wizards"/>
+			<item value="org.eclipse.ui.preferences"/>
+			<item value="org.eclipse.ui.preferences"/>
+			<item value="org.eclipse.ui.preferences"/>
+		</list>
+		<list key="textArray">
+			<item value="secu"/>
+			<item value="sec"/>
+			<item value="tools"/>
+			<item value="property"/>
+			<item value="proper"/>
+			<item value="file ass"/>
+			<item value="micro"/>
+			<item value="mic"/>
+			<item value="pde"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="com.trapedza.bankfusion.activitystepeditor.ASCreationWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="com.trapedza.bankfusion.bpdesigner"/>
+			<item value="BFDevelopmentKit.NewComponents"/>
+		</list>
+	</section>
+	<section name="ImportExportAction">
+		<item value="org.eclipse.jdt.internal.ui.jarpackager.JarPackageWizard" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
+		<item value="org.eclipse.e4.ui.importer.wizard" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.jst.ejb.ui"/>
+			<item value="org.eclipse.jdt.ui.Java"/>
+			<item value="org.eclipse.jst.j2ee.internal"/>
+		</list>
+	</section>
+</section>

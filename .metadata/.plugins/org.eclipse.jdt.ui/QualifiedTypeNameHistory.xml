@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.sql.Timestamp"/>
+<fullyQualifiedTypeName name="com.trapedza.bankfusion.steps.refimpl.AbstractCE_LEN_ValidateKFWDetails"/>
+<fullyQualifiedTypeName name="com.trapedza.bankfusion.core.SystemInformationManager"/>
+<fullyQualifiedTypeName name="com.ce.Fatoms.ValidateKFWDetails"/>
+<fullyQualifiedTypeName name="com.trapedza.bankfusion.servercommon.extensionpoints.ExtensionPoint"/>
+<fullyQualifiedTypeName name="com.ce.fatom.ValidateKFWDetails"/>
+<fullyQualifiedTypeName name="com.trapedza.bankfusion.steps.refimpl.AbstractCE_LEN_RefinanceRatechange"/>
+<fullyQualifiedTypeName name="com.trapedza.bankfusion.batch.process.AbstractBatchProcess"/>
+<fullyQualifiedTypeName name="com.trapedza.bankfusion.persistence.core.IPersistenceObjectsFactory"/>
+<fullyQualifiedTypeName name="com.misys.cbs.common.util.log.CBSLogger"/>
+<fullyQualifiedTypeName name="com.trapedza.bankfusion.batch.fatom.AbstractPersistableFatomContext"/>
+<fullyQualifiedTypeName name="com.trapedza.bankfusion.servercommon.core.BankFusionThreadLocal"/>
+<fullyQualifiedTypeName name="com.trapedza.bankfusion.batch.process.AbstractProcessAccumulator"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.trapedza.bankfusion.bo.refimpl.IBOCE_LEN_RefinanceRateChangeTag"/>
+<fullyQualifiedTypeName name="com.misys.fbe.common.util.CommonUtil"/>
+<fullyQualifiedTypeName name="scala.collection.immutable.List"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.trapedza.bankfusion.bo.refimpl.IBOUB_CMN_BatchProcessLog"/>
+<fullyQualifiedTypeName name="com.trapedza.bankfusion.utils.GUIDGen"/>
+<fullyQualifiedTypeName name="com.misys.bankfusion.subsystem.infrastructure.common.impl.SystemInformationManager"/>
+<fullyQualifiedTypeName name="com.trapedza.bankfusion.core.SimplePersistentObject"/>
+<fullyQualifiedTypeName name="com.trapedza.bankfusion.bo.refimpl.IBOUDFEXTAttributeCollectionFeature"/>
+<fullyQualifiedTypeName name="java.math.BigDecimal"/>
+</qualifiedTypeNameHistroy>

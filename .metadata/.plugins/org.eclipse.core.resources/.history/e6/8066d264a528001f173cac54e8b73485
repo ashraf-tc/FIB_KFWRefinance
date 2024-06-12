@@ -1,0 +1,11 @@
+package com.ce.fatom;
+
+import com.trapedza.bankfusion.steps.refimpl.AbstractCE_LEN_GetProductID;
+
+@SuppressWarnings("serial")
+public class GetProductId extends AbstractCE_LEN_GetProductID  {
+	String accountNum = getF_IN_accountNum();
+	String accNum = "'" + accountNum+"'";
+	String query = "SELECT ACC.PRODUCTID AS PRODUCTID FROM WASADMIN.ACCOUNT ACC WHERE ACC.ACCOUNTID = "+accNum+" ";
+	
+}

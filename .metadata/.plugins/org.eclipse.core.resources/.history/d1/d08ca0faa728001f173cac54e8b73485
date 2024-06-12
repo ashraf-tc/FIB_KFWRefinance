@@ -1,0 +1,26 @@
+package com.ce.fatom;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import com.trapedza.bankfusion.servercommon.core.BankFusionThreadLocal;
+import com.trapedza.bankfusion.steps.refimpl.AbstractCE_LEN_GetProductID;
+
+@SuppressWarnings("serial")
+public class GetProductId extends AbstractCE_LEN_GetProductID  {
+	String accountNum = getF_IN_accountNum();
+	String accNum = "'" + accountNum+"'";
+	String query = "SELECT ACC.PRODUCTID AS PRODUCTID FROM WASADMIN.ACCOUNT ACC WHERE ACC.ACCOUNTID = "+accNum+" ";
+	Connection connection;
+	connection = BankFusionThreadLocal.getPersistanceFactory().getJDBCConnection();
+	PreparedStatement ps1 = connection.prepareStatement(query);
+	
+	
+	
+	public GetProductId() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="EcoreTextModelSearchQueryArea">
+		<item value="false" key="regExCheckbox"/>
+		<item value="false" key="caseSensitiveCheckbox"/>
+		<list key="queryLastSearchesList">
+			<item value="*ce_Len"/>
+		</list>
+	</section>
+</section>

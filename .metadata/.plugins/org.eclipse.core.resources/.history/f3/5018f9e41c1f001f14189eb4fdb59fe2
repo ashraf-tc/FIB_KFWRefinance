@@ -1,0 +1,74 @@
+package com.ce.ratechange.batch;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.misys.cbs.common.util.log.CBSLogger;
+import com.trapedza.bankfusion.batch.fatom.AbstractPersistableFatomContext;
+import com.trapedza.bankfusion.batch.process.AbstractBatchProcess;
+import com.trapedza.bankfusion.batch.process.AbstractProcessAccumulator;
+import com.trapedza.bankfusion.bo.refimpl.IBOCE_AIB_TagTableAccountKYC;
+import com.trapedza.bankfusion.bo.refimpl.IBOCE_LEN_RefinanceRateChangeTag;
+import com.trapedza.bankfusion.persistence.core.IPersistenceObjectsFactory;
+import com.trapedza.bankfusion.servercommon.commands.BankFusionEnvironment;
+import com.trapedza.bankfusion.servercommon.core.BankFusionThreadLocal;
+
+public class RefinanceRateChangeProcess extends AbstractBatchProcess {
+	private BankFusionEnvironment env;
+	IPersistenceObjectsFactory factory;
+	private RefinanceRateChangeAccumulator accumulator;
+	private RefinanceRateChangeContext context;
+
+	private CBSLogger LOGGER = new CBSLogger(RefinanceRateChangeProcess.class.getName());
+
+	public RefinanceRateChangeProcess(AbstractPersistableFatomContext context) {
+		super(context);
+		this.env = BankFusionThreadLocal.getBankFusionEnvironment();
+		this.context = (RefinanceRateChangeContext) context;
+	}
+
+	@Override
+	public AbstractProcessAccumulator getAccumulator() {
+		return accumulator;
+	}
+
+	@Override
+	public void init() {
+		initialiseAccumulator();
+	}
+
+	@Override
+	protected void initialiseAccumulator() {
+		Object[] acc = new Object[0];
+		accumulator = new RefinanceRateChangeAccumulator(acc);
+
+	}
+
+	@Override
+	public AbstractProcessAccumulator process(int pageToProcess) {
+		LOGGER.info("process()", "Testbatchprocess started");
+		this.context = (RefinanceRateChangeContext) context;
+		pagingData.setCurrentPageNumber(pageToProcess);
+		
+		int pageSize = this.context.getPageSize();
+		int fromValue = ((pageToProcess - 1) * pageSize) + 1;
+		int toValue = (pageToProcess * pageSize);
+		LOGGER.info("Process", "\n" + fromValue + " ----- " + toValue);
+		factory = env.getFactory();
+		String query = " WHERE " + IBOCE_LEN_RefinanceRateChangeTag.RowSeq + " BETWEEN ? AND ? ";
+		ArrayList<Integer> parameters = new ArrayList<>();
+		parameters.add(fromValue);
+		parameters.add(toValue);
+		String accountId = "";
+		List<IBOCE_LEN_RefinanceRateChangeTag> tagData = factory.findByQuery(IBOCE_LEN_RefinanceRateChangeTag.BONAME, query,
+				parameters, null);
+
+		
+		
+		factory = BankFusionThreadLocal.getPersistanceFactory();
+		return accumulator;
+	}
+	
+}
+
+
